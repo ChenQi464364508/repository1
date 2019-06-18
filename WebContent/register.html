@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>用户注册register</title>
+</head>
+<body>
+<form>
+<!-- 没有name的输入不会传到后台 -->
+头像<input name="photo" type="file"><br/>
+用户名<input name="username" type="text"><br/>
+
+密码&nbsp;&nbsp;&nbsp;&nbsp;<input name="password" type="password"><br/>
+
+电话&emsp;<input name="phonenumber "><br/>
+
+<!-- 因为radio和checkbox每一个选项必须有value值 否则无论你选什么都是on -->
+性别&emsp;   男<input name ="性别" type="radio" value="1" >&emsp;   女<input name ="性别" type="radio" value="2"><br/>
+
+爱好&emsp; 抽烟<input name="爱好" type="checkbox" value="1"> &emsp;喝酒<input name="爱好" type="checkbox"value="2" checked="checked">
+&emsp;烫头<input name="爱好" type="checkbox"value="3"><br/>
+
+个人简介：<textarea name="introduce" rows="1" cols="10"></textarea><br/>
+
+<!-- option也可以有value -->
+籍贯<select name="jiguan">
+<option value="001">安徽合肥</option>
+ <option value="002">广东深圳</option>
+ <option value="003">上海松江</option>
+ </select><br/>
+
+验证码<input ><br/>
+
+<input type="reset"value="重新填写"><br/>
+<input type="submit" value="确认提交"><br/>
+</form>
+</body>
+</html>
